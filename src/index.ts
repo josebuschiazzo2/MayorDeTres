@@ -1,9 +1,14 @@
-import "./styles.css";
+/*Ejercicio – Mayor de Tres
+• Desarrolle un algoritmo que dados tres
+números determine cuál es el mayor de los
+tres*/
+let mayor: number=0;
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>`;
+for (let i=1; i<4; i++){
+  let num_in : number = Number (prompt ("Ingrese el N°" + i));
+  if (mayor<num_in) {
+    mayor=num_in;
+  }
+}
+console.clear();
+console.log("El número mayor es: " + mayor);
